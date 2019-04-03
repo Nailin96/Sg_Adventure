@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+	<link rel="stylesheet" type="text/css" href="../localstyle.css">
+	<head>
+		<!-- Add a suitable title for this page -->
+		<title>Concept Selection</title>
+
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="ESA Project">
+	    <meta name="author" content="Justinian">
+	    <link rel="icon" href="../static/logos/reactosis.png">
+	</head>
+
+
+	<body>
+		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Back</span></button>
+
+		<button	type="button" class = "btn-left nextbtn_left" id="scorecard_btn" onClick="location.href='../08 Scorecard/index.html'"><span>Scorecard</span></button>
+
+		<button	type="button" class = "btn-left nextbtn_left" id="integratedconcept_btn"onClick="location.href='../07 Integrated Concepts/index.html'"><span>Integrated Concepts</span></button>
+
+		
+
+		<div class = "divcenter">
+			<h2>Concept Selection</h2>
+		</div>
+
+		<div class="wrapper">
+		  <div class="container" id="pughtable">
+        <table class="table-hover">
+          <thead>
+            <tr id="header_game" class="hoverable">
+              <th rowspan="2" class="first_col_header rightborder leftborder topborder">Attribute List</th>
+              <th rowspan="2" class="rightborder topborder">Relative Weighting</th>
+              <th colspan="2" class="rightborder topborder">Singapore Traveller</th>
+              <th colspan="2" class="rightborder topborder">Trivior</th>
+              <th colspan="2" class="rightborder topborder">A RPG for Singapore Tourist</th>
+              <th colspan="2" class="rightborder topborder">A board game for Singapore Tourist</th>
+              <th colspan="2" class="rightborder topborder SGadventure">SGadventure</th>
+            </tr>
+
+              <tr id="header_labels" class="hoverable">
+                  <th>Rating</th>
+                  <th class="rightborder">Weighted Rate</th>
+                  <th>Rating</th>
+                  <th class="rightborder">Weighted Rate</th>
+                  <th>Rating</th>
+                  <th class="rightborder">Weighted Rate</th>
+                  <th>Rating</th>
+                  <th class="rightborder">Weighted Rate</th>
+                  <th class="SGadventure">Rating</th>
+                  <th class="rightborder SGadventure">Weighted Rate</th>
+              </tr>
+          </thead>
+
+          <tbody>
+            <tr id="row_cost" class="hoverable">
+              <td class="attribute_list rightborder leftborder">Low Cost</td>
+              <td class="relative_importance rightborder">0.10</td>
+              <td>3</td>
+              <td class="rightborder">0.45</td>
+              <td>5</td>
+              <td class="rightborder">0.75</td>
+              <td>1</td>
+              <td class="rightborder">0.15</td>
+              <td>2</td>
+			  <td class="rightborder">1.20</td>
+              <td class="SGadventure">5</td>
+              <td class="rightborder SGadventure">0.75</td>
+            </tr>
+
+            <tr id="row_funtoplay" class="hoverable">
+              <td class="attribute_list rightborder leftborder">Fun To Play</td>
+              <td class="relative_importance rightborder">0.30</td>
+              <td>3</td>
+              <td class="rightborder">0.9</td>
+              <td>1</td>
+              <td class="rightborder">0.3</td>
+              <td>5</td>
+              <td class="rightborder">0.9</td>
+              <td>4</td>
+			  <td class="rightborder">0.40</td>
+              <td class="SGadventure">4</td>
+              <td class="rightborder SGadventure">1.2</td>
+            </tr>
+
+            <tr id="row_easytoplay" class="hoverable">
+              <td class="attribute_list rightborder leftborder">Easy To Play</td>
+              <td class="relative_importance rightborder">0.10</td>
+              <td>3</td>
+              <td class="rightborder">0.30</td>
+              <td>4</td>
+              <td class="rightborder">0.40</td>
+              <td>4</td>
+              <td class="rightborder">0.40</td>
+              <td>4</td>
+              <td class="rightborder">0.40</td>
+              <td class="SGadventure">4</td>
+              <td class="rightborder SGadventure">0.40</td>
+            </tr>
+
+            <tr id="row_fleasibility" class="hoverable">
+              <td class="attribute_list rightborder leftborder">Fleasibility</td>
+              <td class="relative_importance rightborder">0.35</td>
+              <td>3</td>
+              <td class="rightborder">0.45</td>
+              <td>5</td>
+              <td class="rightborder">0.75</td>
+              <td>1</td>
+              <td class="rightborder">0.15</td>
+              <td>2</td>
+              <td class="rightborder">0.30</td>
+              <td class="SGadventure">5</td>
+              <td class="rightborder SGadventure">0.75</td>
+            </tr>
+			
+			<tr id="row_learningvalue" class="hoverable bottomborder">
+              <td class="attribute_list rightborder leftborder">Learning Value</td>
+              <td class="relative_importance rightborder">0.30</td>
+              <td>3</td>
+              <td class="rightborder">0.90</td>
+              <td>4</td>
+              <td class="rightborder">1.20</td>
+              <td>3</td>
+              <td class="rightborder">0.90</td>
+              <td>4</td>
+              <td class="rightborder">1.20</td>
+              <td class="SGadventure">4</td>
+              <td class="rightborder SGadventure">1.20</td>
+            </tr>
+
+            <tr class="lastrow" id="total">
+              <td class="blank"></td>
+              <td class="leftborder">Total</td>
+              <td>15</td>
+              <td>3</td>
+              <td>19</td>
+              <td>3.4</td>
+              <td>14</td>
+              <td>2.5</td>
+              <td>16</td>
+              <td>3.4</td>
+              <td class="SGadventure">22</td>
+              <td class="rightborder SGadventure">4.3</td>
+            </tr>
+
+            <tr class="lastrow" id="rank">
+              <td class="blank"></td>
+              <td class="leftborder">Rank</td>
+              <td>4</td>
+              <td>4</td>
+              <td>2</td>
+              <td>2</td>
+              <td>5</td>
+              <td>5</td>
+              <td>2</td>
+              <td>2</td>
+              <td class="SGadventure">1</td>
+              <td class="rightborder SGadventure">1</td>
+            </tr>
+
+            <tr class="lastrow" id="recommend">
+              <td class="blank"></td>
+              <td class="leftborder bottomborder">Recommend?</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder">N</td>
+              <td class="bottomborder SGadventure">Y</td>
+              <td class="rightborder bottomborder SGadventure">Y</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="wrapper" style="display: flex;"">
+      <div class="container" id="final_recommendation">
+        <h3>Reference Concept: <u>Elemental Race</u></h3>
+        <p>
+          Our reference concept is <b>Elemental Race</b> as our team likes the idea and we would like to see how it stacks up against the rest.
+        </p>
+        <br />
+        <h3>Final Recommendation: <u>SGadventure</u></h3>
+        <p>
+          Based on our scorecard, <b>SGadventure</b> scored the highest.  It is the best choice as this operation concept has a <b>high fun and learning value</b> rating which are important factors to build a game that fulfills our mission statement.
+        </p>
+      </div>
+
+      <div class="container" id="spacer"></div>
+
+      <div class="container" id="performance_table">
+        <table>
+          <tr id="perfomance_header">
+            <th>Relative Performance</th>
+            <th>Rating</th>
+          </tr>
+
+          <tr>
+            <td>Much worse than reference concept</td>
+            <td>1</td>
+          </tr>
+
+          <tr>
+            <td>Worse than reference concept</td>
+            <td>2</td>
+          </tr>
+
+          <tr>
+            <td>Same as reference concept</td>
+            <td>3</td>
+          </tr>
+
+          <tr>
+            <td>Better than reference concept</td>
+            <td>4</td>
+          </tr>
+
+          <tr>
+            <td>Much better than reference concept</td>
+            <td>5</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+	</body>
+</html>
