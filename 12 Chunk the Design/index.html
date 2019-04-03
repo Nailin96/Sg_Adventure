@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <link rel="stylesheet" type="text/css" href="../localstyle.css">
+	<head>
+		<!-- Add a suitable title for this page -->
+		<title>Chunk the Design</title>
+
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="ESA Project">
+	    <meta name="author" content="Justinian">
+	    <link rel="icon" href="../static/logos/reactosis.png">
+
+		<!-- Stylesheet CSS -->
+		<link rel="stylesheet" type="text/css" href="../localstyle.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- Javascript Js -->
+		<script src="localscript.js"></script>
+		<script src="../static/jquery-easyui/jquery.min.js"></script>
+		<script src="../static/jquery-easyui/jquery.easyui.min.js"></script>
+	</head>
+
+
+	<body>
+		<button	type="button" class="btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Back</span></button>
+
+		<div class = "divcenter">
+			<h2>Chunk the Design</h2>
+		</div>
+
+		<div class="wrapper">
+			<div class="container" id="designideas">
+				<h3 id="title">Sub-systems</h3>
+				<p style="margin-left: 2px">Mouse over to see the classification for each concept!</p> 
+
+				<ul class="menu">
+					<li id="ld" onmouseover="ld_in()" onmouseout="ld_out()">Instructions and flavour text subsystem</li>
+					<li id="ad" onmouseover="ad_in()" onmouseout="ad_out()">Playing Rules Subsystem</li>
+					<li onmouseover="bd_in()" onmouseout="bd_out()">Playing sequence subsystem</li>
+					<li onmouseover="cd_in()" onmouseout="cd_out()">Physical parts location/position subsystem</li>
+				</ul>			
+			</div>
+
+			<div class="container" id="contentwrapper">
+			<div class="container" id="actualcontent">
+				<table class="table" style="margin-top: 50px">
+					<tr id="table header">
+						<th>function of subsystems</th>
+						<th>functional requirements</th>
+					</tr>
+					<tr id="Row 01">
+						<td id="R1C1">Educates and informs travellers</td>
+						<td id="R1C2">Educate/Inform functions</td>
+					</tr>
+					<tr id="Row 02">
+						<td id="R2C1">Implements the rules of the game</td>
+						<td id="R2C2">Verify and determine the function</td>
+					</tr>
+					<tr id="Row 03">
+						<td id="R3C1">Control playing process of the game</td>
+						<td id="R3C2">Randomize function</td>
+					</tr>
+					<tr id="Row 04">
+						<td id="R4C1">Records player's playing status of the game</td>
+						<td id="R4C2">State functions</td>
+					</tr>
+					<tr id="Row 05">
+					    <td id="R5C1"></td>
+						<td id="R5C2">Scoring functions</td>
+					</tr>
+					<tr id="Row 06">
+					    <td id="R5C1"></td>
+						<td id="R6C2">Verify and determine functions</td>
+					</tr>
+				</table>
+			</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+				

@@ -1,27 +1,116 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<style>
-table {border-collapse: collapse;}
-th {border: 1px solid black;padding:5px;text-align:center;}
-td {border: 1px solid black;padding:5px;text-align:left;}
-</style>  
-<head>
-<!-- Add a suitable title for this page -->
-<title>Scenario Analysis</title>
-</head>
-<body>
-<!-- What is the name of this folder? -->
-<h2>Scenario Analysis</h2>
-
-<table>
-<!-- Add header row -->
-<tr>
-	<th>Link</th>
-	<th>Description</th>
-</tr>
-<!-- Add rows with <tr> tag. Be sure to close with </tr> tag -->
+    <link rel="stylesheet" type="text/css" href="../localstyle.css">
 
 
-</table>
-</body>
+	<body>
+		<button	type="button" class="btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Back</span></button>
+		</div>
+		
+		<div class = "divcenter">
+		<h2>Scenario Analysis</h2>
+		<p>Click the "H" for each cases with high priority to view its respective scenario Swimlanes Diagram</p>
+		
+		<div class = "divcenter">
+			<p>Click Design Alternative to view compact Architecture Diagram</p>
+		<div id = "central block" class = "divcenter" style="padding-top:10px;">
+			<button type="button" id = "Architecture View of SGadventure" class = "button" onClick="location.href='Architecture View of SGadventure.html'">
+				<img src="Architecture View of SGadventure.png" alt="Architecture View of SGadventure" style="height:100px; width:150px; margin-bottom: 30px">
+				<br /><br />
+				<span class="button label"><b>Architecture View of SGadventure</b></span>
+		</button>
+
+		<div class="wrapper">
+			<div class ="container">
+				<h3>Nominal</h3>
+				<table class="table-hover">
+					<tr id="T1 Header">
+						<th>Use Cases</th>
+						<th>Priority</th>
+					</tr>
+
+					<tr id="T1 R1">
+						<td>Player buy attraction cards</td>
+						<td style="text-align: center;"onclick="location.href='ES1.html'">H</td>
+					</tr>
+
+					<tr id="T1 R2">
+						<td>Players choose character cards to begin the game</td>
+						<td style="text-align: center;" onclick="location.href='ES2.html'">H</td>
+					</tr>
+
+					<tr id="T1 R3">
+						<td>Action cards pile runs out of cards</td>
+						<td style="text-align: center;">M</td>
+					</tr>
+
+					<tr id="T1 R4">
+						<td>Players are assigned with character cards to begin the game</td>
+						<td style="text-align: center;"onclick="location.href='ES3.html'">H</td>
+					</tr>
+
+					<tr id="T1 R5">
+						<td>Players play action cards against each other</td>
+						<td style="text-align: center;"onclick="location.href='ES4.html'">H</td>
+					</tr>
+
+					<tr id="T1 R6">
+						<td>Players finish the game and see who wins the game</td>
+						<td style="text-align: center;"onclick="location.href='ES5.html'">H</td>
+					</tr>
+
+					<tr id="T1 R7">
+						<td>Players pack up and keep the game</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+					
+					<tr id="T1 R8">
+						<td>Players read every card instead of playing</td>
+						<td style="text-align: center;">L</td>
+					</tr>			
+				</table>
+			</div>
+
+			<div class="container">
+				<h3>Off-Nominal</h3>
+				<table class="table-hover">
+					<tr id="T2 Header">
+						<th>Use Cases</th>
+						<th>Priority</th>
+					</tr>
+
+					<tr id="T2 R1">
+						<td>Game is paused for long period (more than 24 hours)</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+
+					<tr id="T2 R2">
+						<td>Player pieces misplaced</td>
+						<td style="text-align: center;">M</td>
+					</tr>
+
+					<tr id="T2 R3">
+						<td>Cards dropped due to flight turbulance </td>
+						<td style="text-align: center;""onclick="location.href='ES5.html'">H</td>
+					</tr>
+
+					<tr id="T2 R4">
+						<td>Game is paused for long period</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+
+					<tr id="T2 R5">
+						<td>Players do not have time to finish the game</td>
+						<td style="text-align: center;">M</td>
+					</tr>
+
+					<tr id="T2 R6">
+						<td>Players spills water on the cards</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+	</body>
 </html>
